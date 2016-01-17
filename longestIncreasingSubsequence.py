@@ -23,9 +23,9 @@ class LongestIncreasingSubsequence(object):
         
     def lengthOfLongestIncreasingSubsequence(self, nums):
         return len(self.longestIncreasingSubsequence(nums))
-		
+
 if __name__ == '__main__':
 	longestIS = LongestIncreasingSubsequence()
 	testSequence = [10,9,2,5,3,3,7,101,18]
-	print longestIS.longestIncreasingSubsequence(testSequence)
+	#print longestIS.longestIncreasingSubsequence(testSequence)
 	print longestIS.lengthOfLongestIncreasingSubsequence(testSequence)
