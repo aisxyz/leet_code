@@ -9,8 +9,6 @@ class Solution(object):
                 for num in tempList:
                     if num > biggerThanThis:
                         itemList.append(num)
-                    else:
-                        break
                 if len(increasingSubsequence) < len(itemList):
                     increasingSubsequence = itemList
                 if len(increasingSubsequence) == len(tempList)+1:
@@ -23,6 +21,6 @@ class Solution(object):
 		
 if __name__ == '__main__':
 	longestIS = Solution()
-	testSequence = [10,9,2,1,5,3,2,3,7,101,18]
+	testSequence = [5,6,-1,0,4,8,9,1,2,3,4,10]
 	#print longestIS.longestIncreasingSubsequence(testSequence)
 	print longestIS.lengthOfLIS(testSequence)
